@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa</title>
+    <title>Instituto Codado</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/solologo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/solologo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -24,33 +24,34 @@
             </nav>
         </a>
     </header>
-    <main class="back-emp">
-        <div class="contenedor">
-            <h1 class="titulo"><b>Información de Empresas</b></h1>
-            <div class="requisitos">
-                <div class="info-empresas">
-                    <h1>Empresas Públicas y Privadas</h1>
-                    <div class="info-conten">
-                        <img src="img/inces.png" alt="">
-                        <p>En el Instituto Codado ofrecemos la formación y el desarrollo de Aprendices INCES en
-                             las empresas a través de los institutos: IADD, Instituto de Acción Delegada para la
-                              Formación INCES, DAE, Desarrollo de Aprendices en la Empresa, AIE, Agrupación Inter Empresa.<br><br>
-                              <b>Requisitos:</b> Toda empresa que desee impartir a sus aprendices en los cursos del Instituto Codado
-                              debe estar registrada en el Instituto Nacional de Capacitación y Educación Socialista (INCES)</p>
-                    </div>
-                </div>
-            </div>
+
+    <div class="fondo">
+        <form action="save_info.php" method="post" class="registro-form">
+            <h2>PRE-INSCRIPCION</h2>
+            <h3 class="formh3">Cédula de Identidad</h3>
+            <input type="text" name="cedula" id="" class="requisito" placeholder="ej: 25976814">
+            <h3 class="formh3">Nombre</h3>
+            <input type="text" name="nombre" id="" class="requisito" placeholder="ej: Juan Pérez">
+            <h3 class="formh3">Edad</h3>
+            <input type="text" name="edad" id="" class="requisito" placeholder="ej: 18">
+            <h3 class="formh3">Teléfono</h3>
+            <input type="text" name="telefono" id="" class="requisito" placeholder="ej: 04129756347">
+            <h3 class="formh3">Curso</h3>
+            <select name="curso" class="requisito" id="">
+                <option disable selected="">--Seleccione un Grado--</option>
+                <option>Asistente Administrativo</option>
+                <option>Asistente Contable</option>
+                <option>Asistente en Informática</option>
+                <option>Integral Financiero</option>
+            </select>
+            <h3 class="formh3">Correo</h3>
+            <input type="text" name="correo" id="" class="requisito" placeholder="ej: codado@gmail.com">
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+        <div id="exito1" class = "exito" style='margin-top: 20px;'>
+                   
         </div>
-        <div class="contenedor">
-            <h2 class="subtitulo"><b>Requisitos</b></h2>
-            <div class="requisitos">
-                <div class="rectangulos">
-                    <h1>Inscripción de Empresas</h1>
-                    <a class="btn btn-1" href="pdf/inces_requisitos_empresa.pdf" target="_blank">Descargar PDF</a>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
     <footer>
         <div class="contenedor footer-content">
             <div class="empresa-info">
@@ -70,9 +71,10 @@
             </div>
         </div>
         <div class="line"></div>
-        <div class="banner-b">
+        <div>
             <p class="Copy">Copyright © by Hernández-Rojas</p>
         </div>
     </footer>
+
 </body>
 </html>

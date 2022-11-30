@@ -16,10 +16,11 @@
                 <img src="img/Logo.png" alt="Logo de la compañía">
             </div>
             <nav>
+                <a href="index.php" class="nav-kink">Inicio</a>
                 <a href="empresas.html" class="nav-kink">Empresas</a>
                 <a href="cursos.php" class="nav-kink">Cursos</a>
-                <a href="" class="nav-kink">Contacto</a>
-                <a href="" class="nav-kink1">FORMULARIO</a> 
+                <a href="#contacto" class="nav-kink">Contacto</a>
+                <a href="form.php" class="nav-kink1">FORMULARIO</a> 
             </nav>
         </a>
     </header>
@@ -88,6 +89,74 @@
                 </div>
             </div>
         </div>
+        <section id="contacto">
+        <h2 class="subtitulo" style='margin-top: 40px;'><b>Ubicación y Contacto</b></h2>
+        <div class="warpper" data-aos="fade-up">
+            <input class="radio" id="one" name="group" type="radio" checked>
+            <input class="radio" id="two" name="group" type="radio">
+            <div class="tabs">
+                <label class="tab" id="one-tab" for="one">Ubicación</label>
+                <label class="tab" id="two-tab" for="two">Contacto</label>
+        </div>
+        <div class="panels">
+            <div class="panel" id="one-panel">
+                <div>
+                    <div class="direccion">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.210665872608!2d-66.85852688396805!3d10.484052546989519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5857bf704f43%3A0x83d7ea21068c9363!2sInstituto%20CODADO!5e0!3m2!1ses-419!2sve!4v1669684607533!5m2!1ses-419!2sve" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-container"></iframe>
+                        <div class="dir">
+                            <p class="info-letra"><b>Dirección:</b> Edf. IUDAG Esquina de Sociedad a San Francisco, Av. Universidad, Caracas 1012 Distrito Capital, Venezuela<br><br><b>Teléfonos:</b>
+                            +58 412-2257324, +58 424-1459403, +58 412-9003500<br><br><b>Email:</b> contacto@icodado.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" id="two-panel">
+                    <div class="direccion">
+                        <div class="contact">
+                            <h2 class="title">Formulario de Contacto</h2>
+                            <h3 class="subtitle">Llena el formulario y nos pondremos <br> en contacto contigo.</h3>
+                        </div>
+                    <div class="contacto_form">
+                        <div class="formulario">
+                            <form method="post" action= "save_info.php">
+                                <p class="p-form">
+                                    <label for="nombre" class="colocar_nombre">Nombre
+                                        <span class="obligatorio">*</span>
+                                    </label>
+                                       <input type="text" name="nombre" id="nombre" required="obligatorio" class="input-form">
+                                </p>
+                                <p class="p-form">
+                                    <label for="email" class="colocar_email">Email
+                                        <span class="obligatorio">*</span>
+                                    </label>
+                                    <input type="email" name="email" id="email" required="obligatorio" class="input-form">
+                                </p>
+                                <p class="p-form">
+                                    <label for="asunto" class="colocar_asunto">Asunto
+                                        <span class="obligatorio">*</span>
+                                    </label>
+                                    <input type="text" name="asunto" id="assunto" required="obligatorio" class="input-form">
+                                </p>
+                                <p class="p-form">
+                                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                                         <span class="obligatorio">*</span>
+                                    </label>
+                                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"></textarea>
+                                </p>
+                                <input class="boton-form" type="submit" name="save_info" value="Enviar">
+                                <p class="aviso">
+                                    <span class="obligatorio"> *
+                                    </span>Los campos son
+                                        obligatorios.
+                                </p>
+                            </form>
+                    </div>
+                </div>    
+            </div>
+            <div id="exito" class = "exito">
+                
+            </div>
+        </section>
     </main>
     <footer>
         <div class="contenedor footer-content">

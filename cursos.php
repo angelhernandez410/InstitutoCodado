@@ -16,10 +16,11 @@
                 <img src="img/Logo.png" alt="Logo de la compañía">
             </div>
             <nav>
+                <a href="index.php" class="nav-kink">Inicio</a>
                 <a href="empresas.html" class="nav-kink">Empresas</a>
                 <a href="cursos.php" class="nav-kink">Cursos</a>
-                <a href="" class="nav-kink">Contacto</a>
-                <a href="" class="nav-kink1">FORMULARIO</a> 
+                <a href="index.php#contacto" class="nav-kink">Contacto</a>
+                <a href="form.php" class="nav-kink1">FORMULARIO</a> 
             </nav>
         </a>
     </header>
